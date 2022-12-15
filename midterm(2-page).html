@@ -1,0 +1,256 @@
+<!DOCTYPE html> 
+<html> 
+ 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" href="style.css">
+
+    <title>IKEA</title> 
+ 
+    <style> 
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        } 
+     
+        .container { 
+            max-width: 1170px; 
+            margin: auto; 
+        } 
+     
+        .row { 
+            display: flex; 
+            flex-wrap: wrap; 
+        } 
+     
+        ul { 
+            list-style: none; 
+            font-family: sans-serif;
+        } 
+     
+        .footer { 
+            background-color: rgb(157, 157, 157); 
+            padding: 20px 0;
+            list-style-type: none;
+            overflow: hidden;
+            bottom: 0;
+            width: 100%;
+        } 
+     
+        .footer-col { 
+            width: 25%; 
+            padding: 0 15px; 
+        } 
+     
+        .footer-col h4 { 
+            font-size: 18px; 
+            color: rgb(0, 0, 0); 
+            text-transform: capitalize; 
+            margin-bottom: 35px; 
+            font-weight: 500; 
+            position: relative;
+        } 
+
+        .footer-col h4::before { 
+            content: ''; 
+            position: absolute; 
+            left: 0; 
+            bottom: -10px; 
+            height: 2px; 
+            box-sizing: border-box; 
+            width: 50px; 
+            background-color: red; 
+        } 
+     
+        .footer-col ul li:not(:last-child) { 
+            margin-bottom: 10px; 
+        } 
+     
+        .footer-col ul li a { 
+            font-size: 16px; 
+            text-transform: capitalize; 
+            color: white; 
+            text-decoration: none; 
+            font-weight: 300; 
+            color: #000000; 
+            display: block; 
+            transition: all 0.3s ease; 
+        } 
+     
+        .footer-col ul li a:hover { 
+            color: white; 
+            padding-left: 10px; 
+        } 
+     
+        @media(max-width: 767px) { 
+            .footer-col { 
+                width: 50%; 
+                margin-bottom: 30px; 
+            } 
+        } 
+     
+        @media(max-width: 574px) { 
+            .footer-col { 
+                width: 100%; 
+            } 
+        } 
+     
+     
+        body { 
+            margin: 0; 
+        } 
+
+     
+        header ul { 
+            list-style-type: none; 
+            margin: 0; 
+            padding: 0; 
+            overflow: hidden; 
+            width: 100%; 
+        } 
+     
+        header li { 
+            float: left; 
+        } 
+     
+        header li a { 
+            display: block; 
+            color: rgb(0, 0, 0); 
+            text-align: left; 
+            padding: 14px 16px; 
+            text-decoration: none; 
+        } 
+     
+        a:link { 
+            text-decoration: none; 
+        } 
+     
+        a:visited { 
+            text-decoration: none; 
+        } 
+     
+        a:hover { 
+            text-decoration: underline; 
+        } 
+     
+        a:active { 
+            text-decoration: underline; 
+        } 
+     
+        .act { 
+            float: right; 
+        } 
+ 
+        .content{ 
+            width: 100%; 
+            height: 500px; 
+            background: #275f25; 
+        } 
+        @media(max-width: 767px) { 
+            .header ul li act{ 
+                width: 50%; 
+                margin-bottom: 30px; 
+            } 
+        } 
+     
+        @media(max-width: 574px) { 
+            .header ul li act{ 
+                width: 100%; 
+            } 
+        } 
+        .footer-bottom{
+            background-color: black;
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 10px;
+            bottom: 0;
+            color: white;
+        }
+    </style> 
+</head> 
+ 
+<body> 
+    <header> 
+        <ul> 
+            <li><a href=""> <img class="icon" 
+                        src="https://gbl-sc9u2-prd-cdn.azureedge.net/-/media/aboutikea/images/brand-default.svg?h=36&amp;iar=0&amp;w=88&amp;rev=23ee61ddbb1948f399b47938edeb3c11&amp;hash=2B23017C5CF442F0053CB73C35010BD6" 
+                        alt="Home" width="88" height="36"></a></li> 
+            <li><a href=""><b>About us</b></a></li> 
+            <li><a href=""><b>Life at home</b></a></li> 
+            <li><a href=""><b>Behind the scenes</b></a></li> 
+            <li><a href=""><b>Sustainability</b></a></li> 
+            <li><a href=""><b>Work with us</b></a></li> 
+            <li><a href=""><b>Newsroom</b></a></li> 
+            <li><a href=""><i class="fa fa-fw fa-search"></i></a></li> 
+            <li class="act"><a href=""><b>Shop at IKEA</b></a></li> 
+        </ul> 
+    </header>
+    <main></main> 
+    <div class="content"></div> 
+    <footer class="footer"> 
+        <div class="container"> 
+            <div class="row"> 
+                <div class="footer-col"> 
+                    <h4>About us</h4> 
+                    <ul> 
+                        <li><a href="">The history of IKEA</a></li> 
+                        <li><a href="">The IKEA way of retail</a></li> 
+                        <li><a href="">Year in review</a></li> 
+                        <li><a href="">The IKEA point of view</a></li> 
+                    </ul> 
+                </div> 
+                <div class="footer-col"> 
+                    <h4>Life at home</h4> 
+                    <ul> 
+                        <li><a href="">Our curiosity box</a></li> 
+                        <li><a href="">How we work</a></li> 
+                        <li><a href="">Co-creation</a></li> 
+                    </ul> 
+                </div> 
+                <div class="footer-col"> 
+                    <h4>Behind the scenes</h4> 
+                    <ul> 
+                        <li><a href="">Products and design</a></li> 
+                        <li><a href="">Innovation and technology</a></li> 
+                        <li><a href="">Our commitments</a></li> 
+                    </ul> 
+                </div> 
+                <div class="footer-col"> 
+                    <h4>Sustainability</h4> 
+                    <ul> 
+                        <li><a href="">Healthy and sustainable living</a></li> 
+                        <li><a href="">Recycled polyester</a></li> 
+                        <li><a href="">Transforming into a circular business</a></li> 
+                        <li><a href="">Becoming climate positive</a></li> 
+                        <li><a href="">Responsible sourcing</a></li> 
+                        <li><a href="">Fair and equal</a></li> 
+                    </ul> 
+                </div> 
+                <div class="footer-col"> 
+                    <h4>Work with us</h4> 
+                    <ul> 
+                        <li><a href="">Work at IKEA</a></li> 
+                        <li><a href="">For suppliers</a></li> 
+                    </ul> 
+                </div> 
+                <div class="footer-col"> 
+                    <h4>Newsroom</h4> 
+                    <ul> 
+                        <li><a href="">Publications</a></li> 
+                        <li><a href="">Images and videos</a></li> 
+                        <li><a href="">Spokespersons</a></li> 
+                        <li><a href="">Subscribe</a></li> 
+                    </ul> 
+                </div> 
+            </div> 
+        </div> 
+    </footer> 
+    <div class="footer-bottom">
+      Inter IKEA Systems B.V. 1999 - 2022
+    </div>
+</body> 
+ 
+</html>

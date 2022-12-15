@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+  background-color: white;
+  padding: 0px 60px 0px 60px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  font-size: 30px;
+}
+.item1 {
+  grid-column: 1 / span 3 ;
+  grid-row: 1;
+  padding-right: 0;
+  margin-right: 0;
+}
+.item3 {
+  grid-column: 1 / span 2 ;
+  grid-row: 2;
+}
+.item4 {
+  grid-column: 3 / span 2 ;
+  grid-row: 2;
+}
+.item5 {
+  grid-column: 1 / span 2 ;
+  grid-row: 3;
+}
+.item6 {
+  grid-column: 3 / span 2 ;
+  grid-row: 3;
+}
+.item7 {
+  grid-column: 1 / span 2 ;
+  grid-row: 4;
+}
+.item8 {
+  grid-column: 3 / span 2 ;
+  grid-row: 4;
+}
+.item9 {
+  grid-column: 1 / span 2 ;
+  grid-row: 5;
+}
+.item10 {
+  grid-column: 3 / span 2 ;
+  grid-row: 5;
+}
+.img{
+  border-radius: 1%;
+  width: 900px;
+  height: 650px;
+  position: relative;
+  margin-bottom: 16px;
+}
+.txt{
+  position: absolute;
+  bottom: 110px;
+  left: 90px;
+  color: white;
+  display: flex
+}
+.txt2{
+  position: absolute;
+  bottom: 40px;
+  left: 90px;
+  color: white;
+  display: flex;
+}
+.img1{
+  border-radius: 1%;
+  width: 100%;
+  height: 70%;
+  position: relative;
+}
+.img2{
+  border-radius: 1%;
+  width: 100%;
+  height: 70%;
+}
+.p1 {
+  display: inline-block;
+  left: 0;
+}
+.p2 {
+  display: inline-block;
+  left: 0;
+}
+.i1{
+    width: 680px;
+    height: 800px;
+    border-radius: 1%;
+    top: 0;
+}
+.ii{
+    width: 680px;
+    height: 400px;
+}
+.lil1{
+    color: white;
+    bottom: 175px;
+    position: absolute;
+}
+.lil2{
+    color: white;
+    bottom: 0;
+    position: absolute;
+}
+.lil{
+    color: white;
+    bottom: 100px;
+    position: absolute;
+}
+@media screen and (max-width: 1500px) {
+  .grid-container, .grid-item, .i1, .ii, .img, .img1,.img2, .item1, .item10, .item3, .item4, .item5, .item6, .item7, .item8, .item9, .lil, .lil1, .lil2, .p1, .p2, .txt, .txt2, .item2 {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+.item2{
+  border: solid 1px yellow;
+  height: 50%;
+  width: 600px;
+  border-radius: 5%;
+  background-color: rgb(255, 183, 0);
+  text-align: center;
+  cursor: pointer;
+  font-size: 100%;
+  text-decoration: none;
+
+}
+.cpu{
+  height: 50%;
+  width: 50%;
+  margin: auto;
+}
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="grid-item item1"><div>
+    <img class="img" alt="Top-down view of OBEGRÄNSAD record player." src="https://www.ikea.com/global/en/images/PH_186334_87409ee9fa.jpg" >   
+    <p class="txt">Just dropped!</p>
+    <h1 class="txt2">Swedish House Mafia collab</h1>
+ </div>
+</div>
+  <div class="grid-item">
+    <button class="item2"><a href="ikea.html" target="_blank" style="color: black;">Go shopping</a></button>
+    <img alt="" class="cpu" src="https://www.ikea.com/global/en/images/clock_1153a706e3.png" sizes="(max-width: 1440px) 50vw, 720px">
+  </div>
+  <div class="grid-item item3">
+    <img class="img1" alt="A gallery wall of photos and posters above a TV bench." src="https://www.ikea.com/global/en/images/Linus_Malmo_Living_Room8_170a40ea2c.jpg" >
+    <div class="p1">
+      <div><font size="4" face="Helvetica">Inspiring homes</font></div>
+      <div><bold><font size="6px" face="Helvetica">A student starting small in the city</font></bold></div>
+  </div>
+  </div>  
+  <div class="grid-item item4">
+    <img class="img2" alt="A woven basket full of cinnamon buns." src="https://www.ikea.com/global/en/images/PE_808354p_9adda171da.jpg" >
+    <div class="p2">
+      <div><font size="4" face="Helvetica">Swedish traditions</font></div>
+      <div><bold><font size="6px" face="Helvetica">Celebrating the cinnamon bun</font></bold></div>
+  </div>
+  </div>
+  <div class="grid-item item5"><img class="ii" alt="IKEA allen key" loading="lazy" src="https://www.ikea.com/global/en/images/PE_121718_17b3510426.jpg" ></div>
+  <div class="grid-item item6"><img class="i1" alt="A person in a bright pink jacket." src="https://www.ikea.com/global/en/images/poster_festival_8739974424.jpg" ></div>  
+  <div class="grid-item item7"><div style="position: relative;">
+    <img class="img1" alt="Knut Hagberg and Marianne Hagberg carrying a LISABO table across a car park." src="https://www.ikea.com/global/en/images/Hagberg_start_008a6e757d.jpg">
+    <div class="lil1">The IKEA Museum</div>
+    <h1 class="lil2">The duo behind five decades of IKEA design</h1>
+</div>
+  </div>
+  <div class="grid-item item8"><dib style="position: relative;">
+    <img class="img2" style="object-position: 50% 50%;" alt="A copy of the book Us &amp; our planet balances on its bottom right corner on a yellow plinth. " src="https://www.ikea.com/global/en/images/Us_and_Our_Planet_01_4_5_84135b89bb.jpg" sizes="(min-width: 768px) 686px, 94vw">
+    <div class="lil">A book to inspire change</div>
+    <h1 class="lil2">Us & Our PLanet</h1>
+</div>
+</div>
+</body>
+</html>
