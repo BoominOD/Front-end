@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Lab2</title>
+        <style>
+            .div {
+              color: red;
+            }
+            .back{ 
+            color: white;
+			background-color: red; 
+            }
+            .border1 {
+            border-style: solid;
+            border-width: medium;
+            background-color: #f5e502;
+            padding: 15px;
+            }
+            .border2 {
+                border-style: dotted none dashed none;
+                margin: 10px 20px;
+                border-top-color: green ;
+                border-bottom-color: red ;
+            }
+            .border3 {
+            border-style: solid;
+            border-width: medium;
+            background-color: #fa1111;
+            padding: 15px;
+            border-radius: 15px;
+            }
+            .border4 {
+            border-style: solid;
+            border-width: medium;
+            background-color: rgb(251, 255, 0);
+            padding: 15px;
+            border-radius: 100%;
+            }
+            .dot {
+            height: 50px;
+            width: 50px;
+            background-color: rgb(211, 6, 6);
+            border-radius: 50%;
+            display: inline-block;
+            border-style: solid;
+            border-width: medium;
+            padding: 15px;
+            }
+            </style>
+
+    </head>
+
+    <body>
+        <div class="div">My color is red</div>
+        <div style="color: red;">My color is red too</div>
+        <div style="color: rgba(245, 118, 118);">My color is rgba red</div>
+        <div style="color: #f21d1d;">My color is hex red</div>
+        <div class="back">My background color is red</div>
+        <div class="border1"> I have padding same on each side </div> 
+        <div class="border2"> margin 20px on rears and 10px on top and bottom </div>
+        <div class="border3"> A little rounded </div>
+        <div class="border4"> A fully rounded </div>
+        <div class="dot">A circle</div>
+        <div><span style="color: green;"><ins>I am a tag which is inline by default</ins></span> I am div which is inline</div>
+        <div style="color: green;">I am a tag which was inline but now I am block</div>
+        <br><div><span style="border: 1px ; background-color:#f5e502">I am an inline div near an inline block div</div>
+        <div>Text left</div>
+        
+    </body>
+
+</html>
